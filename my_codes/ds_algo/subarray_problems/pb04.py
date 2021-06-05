@@ -16,8 +16,8 @@ Sub array are :
 [2,3]
 [3]
 
-sub array that haveonly 1 even number are :-> sum are :[1], [1,2], [2,3] 
-so the answer is - >  3
+sub array that haveonly 1 even number are :-> sum are :[1], [1,2], [2,3], [3]
+so the answer is - >  4
 
 """
 

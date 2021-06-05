@@ -4,7 +4,7 @@ sample input
 1 2 3
 sample output
 
-# Print count of sub array which have exactly k even no. in a list
+# Print count of sub array which have exactly k even no. in a that list
 n = 3
 k = 1 # even no in a list
 array = [1,2,3]
