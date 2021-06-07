@@ -31,7 +31,7 @@ so the answer is - >  6
 t = 1
 n = 5
 a = [1,2,3,4,5]
-# count_main = 0
+count_main = 0
 # for i in range(n):
 #     res = []
 #     for j in range(i,n):
@@ -74,7 +74,19 @@ for i in range(n):
                 count += 1
         if count == 2:
             count_main += 1
-            
-                
         
+print(count_main)
+
+
+
+# the best one is at there with only 87 steps, bhai moj krdi :) :) :) 
+
+count_main = 0
+for i in range(n):
+    res = []
+    for j in range(i,n):
+        res.append(a[j])
+        print(res)
+        if res[0]%2 == 1 and res[len(res)-1]%2 == 1: 
+                count_main += 1
 print(count_main)
