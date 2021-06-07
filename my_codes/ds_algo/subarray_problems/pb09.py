@@ -37,7 +37,7 @@ for i in range(n):
     res = []
     for j in range(i,n):
         res.append(a[j])
-        print(res)
+        # print(res)
         if res[0]%2 == 0 and res[len(res)-1]%2 == 0: 
                 count_main += 1
 print(count_main)
