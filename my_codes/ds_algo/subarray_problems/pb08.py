@@ -27,34 +27,36 @@ Sub array are :
 sub array that first and last array are odd as follow :-> [1], [1,2,3], [1,2,3,4,5], [3], [3,4,5], [5]
 so the answer is - >  6
 
-"""   # this code is absolutely correct but not working probrly compiler must have the problem.   
+"""   # this code is absolutely correct but not working probrly compiler must have the problem.  
+# finally jazib sir help me in this code and error s solved now. 
 t = 1
 n = 5
 a = [1,2,3,4,5]
 count_main = 0
-# for i in range(n):
-#     res = []
-#     for j in range(i,n):
-#         res.append(a[j])
-#         print(res)
-#         lenq = len(res)
-#         if lenq == 1:
-#             if res[0]%2 != 0:
-#                 count_main += 1
-#         if lenq > 1:
-#             count2 = 0
-#             for k in range(lenq):
-#                 if k == 0:
-#                     if a[k]%2!=0:
-#                         count2 +=1
-#                 if k == (lenq-1):
-#                     if a[k]%2!=0:
-#                         count2 +=1
-#             if count2 == 2:
-#                 count_main += 1
-# print(count_main)
+for i in range(n):
+    res = []
+    for j in range(i,n):
+        res.append(a[j])
+        print(res)
+        lenq = len(res)
+        if lenq == 1:
+            if res[0]%2 != 0:
+                count_main += 1
+        if lenq > 1:
+            count2 = 0
+            for k in range(lenq):
+                if k == 0:
+                    # if a[k]%2!=0: this error done my me i use a instead of res.
+                    if res[k]%2!=0:
+                        count2 +=1
+                if k == (lenq-1):
+                    if res[k]%2!=0:
+                        count2 +=1
+            if count2 == 2:
+                count_main += 1
+print(count_main)
 
-
+"""
 # second approach , first one was somehow wrong i dont understand how but wrong this one only take 160 steps istead of 270 to complete.
 count_main = 0
 for i in range(n):
@@ -90,3 +92,4 @@ for i in range(n):
         if res[0]%2 == 1 and res[len(res)-1]%2 == 1: 
                 count_main += 1
 print(count_main)
+"""
