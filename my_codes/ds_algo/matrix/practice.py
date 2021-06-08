@@ -1,8 +1,7 @@
 mat = [
     [1, 2, 3],
     [4, 5, 6],
-    [7, 8, 9]
-]
+    [7, 8, 9]]
 
 row = len(mat)
 col = len(mat[0])
@@ -34,6 +33,5 @@ def anti_diagonal():
 # anti_diagonal()
 
 # matrix representation
-a = [[0 for i in range(3)]for j in range(3)]
-print(a)
- 
+# a = [[0 for i in range(3)]for j in range(3)]
+# print(a)

@@ -47,4 +47,4 @@ def matrix_row():
             sum += mat[i][j]
         output_list.append(sum)
     print(output_list)    
-matrix_row()
+# matrix_row()
